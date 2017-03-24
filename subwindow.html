@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>定型文</title>
+	<meta charset="utf-8" />
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript">
+        function a() {
+            switch (document.getElementById("GRT").value) {
+                case "a":
+                    window.opener.document.parentfrm.parent_input.value = "こんにちは";
+                    break;
+                case "b":
+                    window.opener.document.parentfrm.parent_input.value = "Hello";
+                    break;
+                case "c":
+                    window.opener.document.parentfrm.parent_input.value = "おはようございます";
+                    break;
+                case "d":
+                    window.opener.document.parentfrm.parent_input.value = "おはよう";
+                    break;
+                case "e":
+                    window.opener.document.parentfrm.parent_input.value = "Good morning";
+                    break;
+                case "f":
+                    window.opener.document.parentfrm.parent_input.value = "こんばんは";
+                    break;
+                case "g":
+                    window.opener.document.parentfrm.parent_input.value = "Good evening";
+                    break;
+                case "h":
+                    window.opener.document.parentfrm.parent_input.value = "おやすみなさい";
+                    break;
+                case "i":
+                    window.opener.document.parentfrm.parent_input.value = "おやすみ";
+                    break;
+                case "j":
+                    window.opener.document.parentfrm.parent_input.value = "Good night";
+                    break;
+            }
+            switch(document.getElementById("GRF").value){
+                case "k":
+                    window.opener.document.parentfrm.parent_input.value = "ありがとう";
+                    break;
+                case "l":
+                    window.opener.document.parentfrm.parent_input.value = "ありがとうございます";
+                    break;
+                case "m":
+                    window.opener.document.parentfrm.parent_input.value = "Than you";
+                    break;
+            }
+            switch(document.getElementById("APL").value){
+                case "n":
+                    window.opener.document.parentfrm.parent_input.value = "すみません";
+                    break;
+                case "o":
+                    window.opener.document.parentfrm.parent_input.value = "ごめんなさい";
+                    break;
+                case "p":
+                    window.opener.document.parentfrm.parent_input.value = "申し訳ありません";
+                    break;
+                case "q":
+                    window.opener.document.parentfrm.parent_input.value = "sorry";
+                    break;
+            }
+            switch(document.getElementById("RSP").value){
+                case "r":
+                    window.opener.document.parentfrm.parent_input.value = "了解";
+                    break;
+                case "s":
+                    window.opener.document.parentfrm.parent_input.value = "確認しました";
+                    break;
+                case "t":
+                    window.opener.document.parentfrm.parent_input.value = "OK";
+                    break;
+            }
+      
+        }
+        
+    </script>
+</head>
+<body>
+    <b>挨拶</b>
+    <select name="grt" id="GRT" onchange="a()">
+        <option value="">
+        <option value="a">こんにちは
+        <option value="b">Hello
+        <option value="c">おはようございます
+        <option value="d">おはよう
+        <option value="e">Good morning
+        <option value="f">こんばんは
+        <option value="g">Good evening
+        <option value="h">おやすみなさい
+        <option value="i">おやすみ
+        <option value="j">Good night
+            </select>
+
+    <br />
+    <br/>
+    <b>感謝</b>
+    <select id="GRF" onchange="a()">
+        <option value="">
+        <option value="k">ありがとう
+        <option value="l">ありがとうございます
+        <option value="m">Than you
+            </select>
+    <br />
+    <br/>
+    <b>謝罪</b>
+    <select id="APL"onchange="a()">
+        <option value="">
+        <option value="n">すみません
+        <option value="o">ごめんなさい
+        <option value="p">申し訳ありません
+        <option value="q">sorry
+            </select>
+
+    <br />
+    <br/>
+    <b>応答</b>
+    <select id="RSP" onchange="a()">
+        <option value="">
+        <option value="r">了解
+        <option value="s">確認しました
+        <option value="t">OK
+    </select>
+    
+    <br />
+    <br/>
+    <input type="button"id="close"value="閉じる"onclick="a();window.close()"/>
+</body>
+</html>
